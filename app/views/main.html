@@ -1,0 +1,18 @@
+<div>
+  <h1>Tic Tac Toe</h1>
+  <p>Write O to play on the board!</p>
+  
+  <input type="text" ng-model="boxes.top[0].marked" ng-change="addCircle(boxes.top[0])"></input>
+  <input type="text" ng-model="boxes.top[1].marked" ng-change="addCircle(boxes.top[1])"></input>
+  <input type="text" ng-model="boxes.top[2].marked" ng-change="addCircle(boxes.top[2])"></input>
+	<br/>
+  <input type="text" ng-model="boxes.middle[0].marked" ng-change="addCircle(boxes.middle[0])"></input>
+  <input type="text" ng-model="boxes.middle[1].marked" ng-change="addCircle(boxes.middle[1])"></input>
+  <input type="text" ng-model="boxes.middle[2].marked" ng-change="addCircle(boxes.middle[2])"></input>
+	<br/>
+  <input type="text" ng-model="boxes.bottom[0].marked" ng-change="addCircle(boxes.bottom[0])"></input>
+  <input type="text" ng-model="boxes.bottom[1].marked" ng-change="addCircle(boxes.bottom[1])"></input>
+  <input type="text" ng-model="boxes.bottom[2].marked" ng-change="addCircle(boxes.bottom[2])"></input>
+
+  <p>Winner is: {{winner}}</p>
+</div>
