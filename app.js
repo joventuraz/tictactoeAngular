@@ -14,7 +14,7 @@ var port = process.env.PORT || 5000;
 app.listen(port);
 
 app.get('/', function(req,res) {
-  res.sendfile('app/views/index.html');
+  res.sendfile(__dirname + '/path/to/file''app/views/index.html');
 });
 
 console.log('server started '+port);
