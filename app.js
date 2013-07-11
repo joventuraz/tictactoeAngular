@@ -6,7 +6,7 @@ app = express();
 
 app.configure(function(){
     app.use(express.bodyParser());
-    app.use(express.static(path.join(__dirname, 'dist')));
+    app.use(express.static(path.join(__dirname + '/index.html', 'dist')));
 });
 
 var port = process.env.PORT || 5000;
